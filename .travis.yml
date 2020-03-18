@@ -6,6 +6,7 @@ services:
 before_install:
   - docker -v
   - docker-compose -v
+  - entrypoints/entrypoint.sh
 
 install:
   - docker-compose build 
