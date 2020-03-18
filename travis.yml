@@ -9,5 +9,3 @@ before_install:
 
 script:
     - docker-compose up -d
-    
-
