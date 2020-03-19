@@ -1,5 +1,6 @@
 class WidgetsController < ApplicationController
   before_action :set_widget, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token, raise: false
 
   # GET /widgets
   # GET /widgets.json
